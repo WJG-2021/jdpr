@@ -1,0 +1,12 @@
+/* body styles */
+body{
+    background-color: aliceblue !important;
+}
+
+.container{
+    background-color: white;
+}
+
+#vickyImg{
+    border-radius: 25px;
+}

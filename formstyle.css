@@ -1,0 +1,211 @@
+/** Final layout
+CSS layout for form.
+Company name: Coneybeare Cleantech
+@author : JDPR
+Software Development student, Green River College
+ */
+
+hr{
+    border: 1px solid forestgreen;
+}
+
+body{
+    background-color: aliceblue!important;
+}
+
+#sub{
+    color: black!important;
+    border-color: forestgreen!important;
+
+}
+#sub:hover {
+    background-color: lightgreen;
+
+}
+
+.toplogo{
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 35%;
+}
+/* Submit Button color */
+
+.btn-primary{
+    background-color: forestgreen !important;
+    border-color: black !important;
+}
+
+/* This makes the input field red if it is missing value before submitting the form */
+input:required:focus {
+    border: 1px solid forestgreen;
+    outline: none;
+    opacity: 1;
+}
+/* Declaration of grid area using class name */
+
+/* Business information fieldset*/
+#binfo{
+    grid-area: businessInfo;
+    /*border: 2px solid forestgreen;*/
+
+}
+/* About Company fieldset */
+#about{
+
+    grid-area: aboutCompany;
+    /*border: 2px solid forestgreen;*/
+
+}
+/* Coneybeare Logo */
+.logo{
+    grid-area: logoImage;
+    padding: 5px;
+    margin-top: 15px;
+
+}
+
+/* form tag setting display as grid */
+.formbody{
+    /*display: grid;*/
+    /*grid-template-areas: "businessInfo logoImage aboutCompany   ";*/
+
+
+
+
+}
+input#city,input#state, label#state{
+    display: block;
+}
+
+/* Submit button (used id on this) */
+#sub{
+    grid-area: buttn;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20% !important;
+    border: none;
+    /*color: white;*/
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    /*background-color: forestgreen;*/
+}
+
+
+/*Aligning text in legend in center */
+legend{
+    align-content: center;
+    text-align: center;
+
+}
+footer{
+    color: forestgreen;
+    margin-top: 3rem;
+}
+#personalInfo{
+    grid-area: pinfo;
+}
+
+
+/* Media screen for laptop and desktop screen */
+@media only screen and (min-width: 1025px) {
+
+
+    .formbody{
+
+        /*grid-template-columns: 1fr 1fr 1fr!important;*/
+        /*grid-template-areas: "businessInfo  logoImage aboutCompany";*/
+
+    }
+
+    /* button setting for laptop and desktop screen */
+    #sub{
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 25%!important;
+        background-color: cornflowerblue;
+
+
+    }
+    legend{
+        font-size: 3rem;
+    }
+
+    .logo{
+        display: block;
+        margin-left: 2rem;
+        margin-right: -15rem;
+        margin-top: 5rem;
+        width: 80%;
+
+    }
+
+    #aboutOrg{
+        height: 68%;
+    }
+
+
+}
+
+
+/* Media screen for tablet */
+@media only screen and (max-width: 1024px) {
+    /*.formbody{*/
+    /*    display: grid;*/
+    /*    margin-right: auto;*/
+    /*    margin-left: auto;*/
+    /*    grid-template-rows: 2fr;*/
+    /*    grid-template-areas: "logoImage" "businessInfo" "aboutCompany" "buttn";*/
+
+
+    /*}*/
+    /*#sub{*/
+    /*    display: block!important;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*    width: 50%;*/
+    /*}*/
+    /*.logo{*/
+    /*    display: none;*/
+    /*}*/
+    /*.footlogo{*/
+    /*    display: block;*/
+    /*    width: 50%;*/
+    /*    margin-right: auto;*/
+    /*    margin-left: auto;*/
+
+    /*}*/
+
+}
+
+/* Media screen or mobile */
+@media only screen and (max-width: 480px) {
+
+
+    /*.formbody{*/
+    /*    display: grid;*/
+    /*    grid-template-rows: 2fr!important;*/
+    /*    grid-template-areas: "businessInfo" "aboutCompany" "pinfo" "buttn";*/
+
+    /*}*/
+
+    #sub{
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 5px 2px;
+
+
+    }
+
+}
+
+
